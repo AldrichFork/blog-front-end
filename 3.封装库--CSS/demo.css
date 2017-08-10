@@ -1,0 +1,19 @@
+#box{
+font-size: 160px;
+}
+
+.a{
+    color: red;
+}
+
+.b{
+    background: #cccccc;
+}
+
+.c{
+    font-weight: bold;
+}
+
+.d{
+    text-decoration: underline;
+}
