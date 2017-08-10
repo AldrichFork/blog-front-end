@@ -7,7 +7,7 @@
 //前台调用
 var $=function () {
     return new Base();
-}
+};
 
 
 
@@ -41,7 +41,7 @@ Base.prototype.getClass=function (className,idName) {
         }
     }
     return this;
-}
+};
 
 //获取某一个节点
 Base.prototype.getElement=function (num) {
@@ -49,7 +49,7 @@ Base.prototype.getElement=function (num) {
     this.elements=[];
     this.elements[0]=element;
     return this;
-}
+};
 
 //获取元素节点数组
 Base.prototype.getTagName=function (tag) {
@@ -80,7 +80,7 @@ Base.prototype.css=function (attr, value) {
         this.elements[i].style[attr]=value;
     }
     return this;
-}
+};
 
 //添加Class
 Base.prototype.addClass = function (className) {
@@ -90,7 +90,7 @@ Base.prototype.addClass = function (className) {
         }
     }
     return this;
-}
+};
 
 //移除Class
 Base.prototype.removeClass=function (className) {
@@ -100,7 +100,7 @@ Base.prototype.removeClass=function (className) {
         }
     }
     return this;
-}
+};
 
 //添加link或者style的CSS规则
 Base.prototype.addRule=function (num,selectorText,cssText,position) {
@@ -111,7 +111,7 @@ Base.prototype.addRule=function (num,selectorText,cssText,position) {
         sheet.addRule(selectorText,cssText,position)
     }
     return this;
-}
+};
 
 
 //移除link或者style的CSS规则
@@ -123,7 +123,7 @@ Base.prototype.removeRule=function (num,index) {
     sheet.removeRule(index);
    }
    return this;
-}
+};
 
 
 // 设置innerHtml
@@ -135,11 +135,11 @@ Base.prototype.html=function (str) {
         this.elements[i].innerHTML=str;
     }
     return this;
-}
+};
 //触发点击事件
 Base.prototype.click=function (fn) {
     for (var i=0;i<this.elements.length;i++) {
         this.elements[i].onclick=fn;
     }
     return this;
-}
+};
