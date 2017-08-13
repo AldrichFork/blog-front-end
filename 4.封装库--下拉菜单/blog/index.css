@@ -30,11 +30,12 @@ ul li{
     float: right;
     background: url("images/arrow.png") no-repeat 65px center;
     cursor: pointer;
+    position: relative;
 }
 #header ul{
     position: absolute;
     top: 30px;
-    left: 1320px;
+    left: 0px;
     background: #fbf7e1;
     width: 100px;
     height: 110px;
